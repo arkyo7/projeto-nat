@@ -4,7 +4,11 @@ import { Eyebrow, Reveal, WhatsAppLink } from "./primitives";
 export function FinalCta() {
   return (
     <section id="contato" className="relative overflow-hidden bg-ink py-24 text-cream md:py-32">
-      <span aria-hidden className="pointer-events-none absolute inset-6 border border-gold/15" />
+      <span aria-hidden className="pointer-events-none absolute inset-6 border border-chestnut/60" />
+      <span
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-6 h-10 w-px -translate-x-1/2 bg-gradient-to-b from-gold to-transparent"
+      />
       <div className="relative mx-auto max-w-2xl px-6 text-center">
         <Reveal>
           <Eyebrow className="justify-center">Contato</Eyebrow>
@@ -22,7 +26,7 @@ export function FinalCta() {
         </Reveal>
         <Reveal delay={0.24}>
           <WhatsAppLink href={site.whatsapp} className="mt-10 w-full px-8 py-4 sm:w-auto">
-            Falar com Natathya no WhatsApp
+            Falar com a Nat
           </WhatsAppLink>
         </Reveal>
       </div>

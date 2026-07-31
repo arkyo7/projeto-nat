@@ -11,7 +11,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <Eyebrow>Como funciona</Eyebrow>
@@ -26,7 +26,7 @@ export function HowItWorks() {
           {/* linha dourada: horizontal no desktop, vertical no mobile */}
           <span
             aria-hidden
-            className="absolute left-[15px] top-2 bottom-2 w-px bg-gradient-to-b from-gold/60 via-gold/30 to-transparent md:left-0 md:right-0 md:top-[15px] md:bottom-auto md:h-px md:w-auto md:bg-gradient-to-r"
+            className="absolute left-[15px] top-2 bottom-2 w-px bg-gradient-to-b from-gold via-gold/50 to-transparent md:left-0 md:right-0 md:top-[15px] md:bottom-auto md:h-px md:w-auto md:bg-gradient-to-r"
           />
           <motion.ol
             className="relative grid gap-10 md:grid-cols-4 md:gap-6"
@@ -37,11 +37,11 @@ export function HowItWorks() {
           >
             {steps.map((step, i) => (
               <motion.li key={step.title} variants={staggerChild} className="relative pl-12 md:pl-0">
-                <span className="absolute left-0 top-0 grid h-8 w-8 place-items-center rounded-full border border-gold/50 bg-background font-serif text-sm text-gold md:static md:mb-6">
+                <span className="absolute left-0 top-0 grid h-8 w-8 place-items-center rounded-full border border-gold/50 bg-espresso font-serif text-sm text-gold-light md:static md:mb-6">
                   {i + 1}
                 </span>
                 <h3 className="font-serif text-xl text-ink md:mt-0">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.text}</p>
+                <p className="mt-2 text-sm leading-relaxed text-chestnut">{step.text}</p>
               </motion.li>
             ))}
           </motion.ol>

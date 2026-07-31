@@ -92,7 +92,7 @@ export function EditorialImage({
             innerClassName,
           )}
         >
-          <span className="border border-gold/40 px-4 py-2 text-[0.65rem] uppercase tracking-[0.24em] text-foreground/60">
+          <span className="border border-gold/45 px-4 py-2 text-[0.65rem] uppercase tracking-[0.24em] text-cream/75">
             {image.label}
           </span>
         </div>
@@ -110,7 +110,7 @@ export function WhatsAppLink({
 }: {
   children: ReactNode;
   className?: string;
-  variant?: "gold" | "outline" | "ink";
+  variant?: "gold" | "outline" | "ink" | "dark";
   href?: string;
 }) {
   return (
@@ -121,8 +121,10 @@ export function WhatsAppLink({
       className={cn(
         "inline-flex min-h-11 items-center justify-center rounded-sm px-6 py-3 text-[0.78rem] font-medium uppercase tracking-[0.18em] transition-all duration-300 hover:-translate-y-0.5 focus-visible:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         variant === "gold" &&
-          "bg-gold text-gold-foreground shadow-sm hover:shadow-lg hover:shadow-gold/25",
+          "bg-gold text-gold-foreground shadow-sm hover:bg-gold-light hover:shadow-lg hover:shadow-coffee/40",
         variant === "ink" && "bg-ink text-cream hover:shadow-lg",
+        variant === "dark" &&
+          "border border-gold/45 bg-coffee text-cream shadow-sm hover:border-gold hover:bg-chestnut hover:shadow-lg hover:shadow-coffee/40",
         variant === "outline" &&
           "border border-current text-current hover:border-gold hover:text-gold",
         className,

@@ -15,7 +15,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="bg-white/60 py-20 md:py-28">
+    <section className="bg-taupe/55 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <Eyebrow>Feedbacks</Eyebrow>
@@ -37,11 +37,11 @@ export function Testimonials() {
             <motion.li
               key={item.id}
               variants={staggerChild}
-              className="group rounded-sm border border-dashed border-gold/40 bg-card p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-gold hover:shadow-xl hover:shadow-ink/5"
+              className="group rounded-sm border border-dashed border-gold/35 bg-coffee p-8 transition-all duration-300 hover:-translate-y-2 hover:border-gold hover:shadow-xl hover:shadow-coffee/35"
             >
-              <Quote className="h-5 w-5 text-gold" strokeWidth={1.25} aria-hidden />
-              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{item.label}</p>
-              <p className="mt-6 border-t border-gold/15 pt-4 text-[0.65rem] uppercase tracking-[0.2em] text-taupe">
+              <Quote className="h-5 w-5 text-gold-light" strokeWidth={1.25} aria-hidden />
+              <p className="mt-6 text-sm leading-relaxed text-cream/75">{item.label}</p>
+              <p className="mt-6 border-t border-gold/20 pt-4 text-[0.65rem] uppercase tracking-[0.2em] text-taupe/80">
                 Espaço reservado para depoimento real
               </p>
             </motion.li>

@@ -55,24 +55,24 @@ export function Services() {
               variants={staggerChild}
               {...(reduced ? {} : { whileHover: { y: -8, scale: 1.015 } })}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="group flex flex-col overflow-hidden rounded-sm border border-border bg-card shadow-sm transition-all duration-300 hover:border-gold/40 hover:shadow-xl hover:shadow-ink/5"
+              className="group flex flex-col overflow-hidden rounded-sm border border-chestnut/25 bg-taupe/45 shadow-sm transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:shadow-coffee/25"
             >
               {/* Área visual abstrata — futura imagem do serviço entra aqui */}
               <div className="overflow-hidden" style={{ aspectRatio: "16 / 10" }}>
-                <div className="nk-placeholder h-full w-full transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.02]" />
+                <div className="nk-placeholder-warm h-full w-full transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]" />
               </div>
               <div className="flex flex-1 flex-col p-7">
-                <h3 className="font-serif text-xl leading-snug text-ink transition-colors group-hover:text-gold">
+                <h3 className="font-serif text-xl leading-snug text-ink transition-colors group-hover:text-chestnut">
                   {service.title}
                 </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/75">
                   {service.text}
                 </p>
                 <a
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex min-h-11 items-center gap-2 text-[0.72rem] uppercase tracking-[0.18em] text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                  className="mt-6 inline-flex min-h-11 items-center gap-2 text-[0.72rem] uppercase tracking-[0.18em] text-chestnut transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                 >
                   Saiba mais
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />

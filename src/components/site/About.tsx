@@ -5,11 +5,11 @@ const badges = ["Bruxelas", "Hair Therapy", "Colorimetria", "Visagismo"];
 
 export function About() {
   return (
-    <section id="sobre" className="bg-ink py-20 text-cream md:py-28">
+    <section id="sobre" className="bg-gradient-to-b from-espresso to-ink py-20 text-cream md:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.85fr_1fr] lg:gap-16">
         <Reveal className="group">
           {/* RETRATO: definir images.about.src em src/config/site.ts */}
-          <EditorialImage image={images.about} className="w-full bg-ink/40" />
+          <EditorialImage image={images.about} className="w-full bg-chestnut/35" />
         </Reveal>
 
         <div>
@@ -44,7 +44,7 @@ export function About() {
           </Reveal>
           <Reveal delay={0.32}>
             <WhatsAppLink href={site.whatsapp} className="mt-9 w-full sm:w-auto">
-              Agendar pelo WhatsApp
+              Falar com a Nat
             </WhatsAppLink>
           </Reveal>
         </div>
