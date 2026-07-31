@@ -42,6 +42,7 @@ export function Hero() {
           {/* IMAGEM DO HERO: definir images.hero.src em src/config/site.ts */}
           <EditorialImage
             image={images.hero}
+            innerClassName="object-top"
             className="w-full bg-gradient-to-br from-espresso to-coffee"
           />
         </Reveal>
