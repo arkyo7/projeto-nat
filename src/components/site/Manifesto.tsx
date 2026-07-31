@@ -55,7 +55,7 @@ export function Manifesto() {
             <motion.li
               key={title}
               variants={staggerChild}
-              whileHover={reduced ? undefined : { y: -8, scale: 1.015 }}
+              {...(reduced ? {} : { whileHover: { y: -8, scale: 1.015 } })}
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="group rounded-sm border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:border-gold/40 hover:shadow-xl hover:shadow-ink/5"
             >

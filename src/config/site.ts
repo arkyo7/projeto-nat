@@ -26,7 +26,7 @@ export type SiteImage = {
   priority?: boolean;
 };
 
-export const images: Record<string, SiteImage> = {
+export const images = {
   hero: {
     src: null, // TODO: conectar imagem principal do hero
     alt: "Natathya Kozan finalizando um trabalho de coloração em seu estúdio em Bruxelas",
@@ -40,4 +40,4 @@ export const images: Record<string, SiteImage> = {
     label: "Foto de Natathya",
     ratio: "3 / 4",
   },
-};
+} satisfies Record<string, SiteImage>;

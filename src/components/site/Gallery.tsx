@@ -80,7 +80,7 @@ export function Gallery() {
             <motion.li
               key={slot.id}
               variants={staggerChild}
-              whileHover={reduced ? undefined : { y: -6, scale: 1.015 }}
+              {...(reduced ? {} : { whileHover: { y: -6, scale: 1.015 } })}
               transition={{ duration: 0.3, ease: "easeOut" }}
               className={cn(
                 "group relative overflow-hidden rounded-sm border border-border bg-card shadow-sm transition-all duration-300 hover:border-gold/40 hover:shadow-xl hover:shadow-ink/5",
