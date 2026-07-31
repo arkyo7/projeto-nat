@@ -28,15 +28,15 @@ export type SiteImage = {
 
 export const images = {
   hero: {
-    src: null, // TODO: conectar imagem principal do hero
-    alt: "Natathya Kozan finalizando um trabalho de coloração em seu estúdio em Bruxelas",
+    src: "/images/599463830_17914575561247391_280103034505541156_n.jpg"
+    alt: "Cliente com cabelo loiro longo, iluminado e finalizado pela Nat Kozan Hair Therapy",
     label: "Imagem principal",
     ratio: "4 / 5",
     priority: true,
   },
   about: {
-    src: null, // TODO: conectar retrato de Natathya
-    alt: "Retrato de Natathya Kozan, profissional de cabelo e Hair Therapy em Bruxelas",
+    src: "/images/748287057_17945123457247391_6090716563705405403_n.jpg"
+    alt: "Natathya Kozan, profissional de cabelo e criadora da NK Hair Therapy em Bruxelas",
     label: "Foto de Natathya",
     ratio: "3 / 4",
   },
