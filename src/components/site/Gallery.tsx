@@ -57,12 +57,6 @@ const slots: Slot[] = [
     src: "/images/723573146_17939822331247391_6498143734256078343_n.jpg",
     alt: "Loiro frio em corte médio com pontas modeladas",
   },
-  {
-    id: 8,
-    category: "Visagismo",
-    src: "/images/748287057_17945123457247391_6090716563705405403_n.jpg",
-    alt: "Natathya Kozan apresentando a identidade visual da NK Hair Therapy",
-  },
 ];
 
 const filters = ["Todos", "Loiros", "Cores", "Cortes", "Visagismo"] as const;
