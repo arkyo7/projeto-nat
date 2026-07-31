@@ -13,14 +13,56 @@ type Category = "Loiros" | "Cores" | "Cortes" | "Visagismo";
 type Slot = { id: number; category: Category; src: string | null; alt: string; wide?: boolean };
 
 const slots: Slot[] = [
-  { id: 1, category: "Loiros", src: null, alt: "Transformação 1 — trabalho de loiro personalizado", wide: true },
-  { id: 2, category: "Cores", src: null, alt: "Transformação 2 — coloração personalizada" },
-  { id: 3, category: "Cortes", src: null, alt: "Transformação 3 — corte personalizado" },
-  { id: 4, category: "Visagismo", src: null, alt: "Transformação 4 — visagismo aplicado" },
-  { id: 5, category: "Loiros", src: null, alt: "Transformação 5 — iluminação de fios" },
-  { id: 6, category: "Cores", src: null, alt: "Transformação 6 — correção de cor", wide: true },
-  { id: 7, category: "Cortes", src: null, alt: "Transformação 7 — corte com movimento" },
-  { id: 8, category: "Visagismo", src: null, alt: "Transformação 8 — leitura de formas e tons" },
+  {
+    id: 1,
+    category: "Loiros",
+    src: "/images/599463830_17914575561247391_280103034505541156_n.jpg",
+    alt: "Cabelo loiro longo com iluminação suave e acabamento luminoso",
+    wide: true,
+  },
+  {
+    id: 2,
+    category: "Cores",
+    src: "/images/752617173_17945656890247391_4279964034356758015_n.jpg",
+    alt: "Cabelo em tom cobre intenso com acabamento liso e brilhante",
+  },
+  {
+    id: 3,
+    category: "Cortes",
+    src: "/images/730644541_17941825110247391_5140325819566369634_n.jpg",
+    alt: "Corte cacheado personalizado com volume e definição",
+  },
+  {
+    id: 4,
+    category: "Visagismo",
+    src: "/images/727158783_17941073472247391_3219958452925352459_n.jpg",
+    alt: "Cabelo médio com mechas em tom mel harmonizadas ao rosto",
+  },
+  {
+    id: 5,
+    category: "Loiros",
+    src: "/images/732832831_17943386355247391_772955244969221033_n.jpg",
+    alt: "Loiro quente em camadas com movimento e contorno iluminado",
+  },
+  {
+    id: 6,
+    category: "Cortes",
+    src: "/images/726951308_17940788238247391_6191526857479627273_n.jpg",
+    alt: "Corte curto assimétrico com lateral marcada e acabamento moderno",
+    wide: true,
+  },
+  {
+    id: 7,
+    category: "Loiros",
+    src: "/images/723573146_17939822331247391_6498143734256078343_n.jpg",
+    alt: "Loiro frio em corte médio com pontas modeladas",
+  },
+  {
+    id: 8,
+    category: "Visagismo",
+    src: "/images/748287057_17945123457247391_6090716563705405403_n.jpg",
+    alt: "Natathya Kozan apresentando a identidade visual da NK Hair Therapy",
+  },
 ];
 
 const filters = ["Todos", "Loiros", "Cores", "Cortes", "Visagismo"] as const;
