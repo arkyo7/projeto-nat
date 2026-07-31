@@ -8,22 +8,32 @@ const services = [
   {
     title: "Loiros e iluminação",
     text: "Tons personalizados para iluminar o rosto com harmonia, brilho e saúde.",
+    image: "/images/599463830_17914575561247391_280103034505541156_n.jpg",
+    alt: "Cabelo loiro longo com iluminação personalizada",
   },
   {
     title: "Colorimetria e correção de cor",
     text: "Planejamento de acordo com o histórico do cabelo, o tom de pele e o resultado desejado.",
+    image: "/images/752617173_17945656890247391_4279964034356758015_n.jpg",
+    alt: "Cabelo em tom cobre intenso após trabalho de colorimetria",
   },
   {
     title: "Cortes personalizados",
     text: "Cortes que respeitam textura, formato do rosto, rotina e personalidade.",
+    image: "/images/730644541_17941825110247391_5140325819566369634_n.jpg",
+    alt: "Corte personalizado em cabelo cacheado com definição e volume",
   },
   {
     title: "Visagismo e cores",
     text: "Uma leitura individual para escolher formas e tons que valorizem a imagem.",
+    image: "/images/727158783_17941073472247391_3219958452925352459_n.jpg",
+    alt: "Cabelo médio com mechas em tom mel e corte harmonizado ao rosto",
   },
   {
     title: "Tratamentos capilares",
     text: "Cuidado direcionado às necessidades do fio, com foco em brilho, resistência e movimento.",
+    image: "/images/732832831_17943386355247391_772955244969221033_n.jpg",
+    alt: "Cabelo loiro saudável com brilho e movimento",
   },
 ];
 
@@ -57,9 +67,14 @@ export function Services() {
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="group flex flex-col overflow-hidden rounded-sm border border-chestnut/25 bg-taupe/45 shadow-sm transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:shadow-coffee/25"
             >
-              {/* Área visual abstrata — futura imagem do serviço entra aqui */}
               <div className="overflow-hidden" style={{ aspectRatio: "16 / 10" }}>
-                <div className="nk-placeholder-warm h-full w-full transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]" />
+                <img
+                  src={service.image}
+                  alt={service.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.045]"
+                />
               </div>
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="font-serif text-xl leading-snug text-ink transition-colors group-hover:text-chestnut">
