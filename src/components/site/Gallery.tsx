@@ -45,13 +45,6 @@ const slots: Slot[] = [
     alt: "Loiro quente em camadas com movimento e contorno iluminado",
   },
   {
-    id: 6,
-    category: "Cortes",
-    src: "/images/726951308_17940788238247391_6191526857479627273_n.jpg",
-    alt: "Corte curto assimétrico com lateral marcada e acabamento moderno",
-    wide: true,
-  },
-  {
     id: 7,
     category: "Loiros",
     src: "/images/723573146_17939822331247391_6498143734256078343_n.jpg",
@@ -130,8 +123,7 @@ export function Gallery() {
                     alt={slot.alt}
                     loading="lazy"
                     decoding="async"
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.045]"
-                    style={{ objectPosition: slot.id === 6 ? "center" : "top" }}
+                    className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.045]"
                     onClick={lightboxEnabled ? undefined : undefined}
                   />
                 ) : (
