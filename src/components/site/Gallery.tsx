@@ -130,7 +130,8 @@ export function Gallery() {
                     alt={slot.alt}
                     loading="lazy"
                     decoding="async"
-                    className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.045]"
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.045]"
+                    style={{ objectPosition: slot.id === 6 ? "center" : "top" }}
                     onClick={lightboxEnabled ? undefined : undefined}
                   />
                 ) : (
