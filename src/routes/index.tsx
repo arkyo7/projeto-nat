@@ -7,7 +7,6 @@ import { Services } from "@/components/site/Services";
 import { Gallery } from "@/components/site/Gallery";
 import { About } from "@/components/site/About";
 import { HowItWorks } from "@/components/site/HowItWorks";
-import { Testimonials } from "@/components/site/Testimonials";
 import { FinalCta } from "@/components/site/FinalCta";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
@@ -60,7 +59,6 @@ function Index() {
         <Gallery />
         <About />
         <HowItWorks />
-        <Testimonials />
         <FinalCta />
       </main>
       <Footer />
