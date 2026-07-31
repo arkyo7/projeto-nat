@@ -35,7 +35,7 @@ export function Gallery() {
   const lightboxEnabled = slots.some((s) => s.src);
 
   return (
-    <section id="transformacoes" className="bg-white/60 py-20 md:py-28">
+    <section id="transformacoes" className="bg-taupe/70 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <Eyebrow>Transformações</Eyebrow>
@@ -58,8 +58,8 @@ export function Gallery() {
                 className={cn(
                   "min-h-11 rounded-sm border px-5 text-[0.7rem] uppercase tracking-[0.18em] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold",
                   active === filter
-                    ? "border-gold bg-gold text-gold-foreground"
-                    : "border-ink/15 text-foreground/70 hover:-translate-y-0.5 hover:border-gold hover:text-gold",
+                    ? "border-gold/60 bg-espresso text-cream"
+                    : "border-chestnut/40 bg-transparent text-chestnut hover:-translate-y-0.5 hover:border-gold hover:text-ink",
                 )}
               >
                 {filter}
@@ -83,7 +83,7 @@ export function Gallery() {
               {...(reduced ? {} : { whileHover: { y: -6, scale: 1.015 } })}
               transition={{ duration: 0.3, ease: "easeOut" }}
               className={cn(
-                "group relative overflow-hidden rounded-sm border border-border bg-card shadow-sm transition-all duration-300 hover:border-gold/40 hover:shadow-xl hover:shadow-ink/5",
+                "group relative overflow-hidden rounded-sm border border-chestnut/30 bg-coffee shadow-sm transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:shadow-coffee/30",
                 slot.wide && "sm:col-span-2",
               )}
             >
@@ -98,14 +98,20 @@ export function Gallery() {
                     onClick={lightboxEnabled ? undefined : undefined}
                   />
                 ) : (
-                  <div className="nk-placeholder flex h-full w-full items-center justify-center transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.02]">
-                    <span className="border border-gold/40 px-4 py-2 text-[0.62rem] uppercase tracking-[0.22em] text-foreground/60">
+                  <div
+                    className={cn(
+                      "flex h-full w-full items-center justify-center transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]",
+                      slot.id % 3 === 0 ? "nk-placeholder-warm" : "nk-placeholder",
+                      slot.id % 4 === 0 && "bg-ink/25",
+                    )}
+                  >
+                    <span className="border border-gold/45 px-4 py-2 text-[0.62rem] uppercase tracking-[0.22em] text-cream/80">
                       Transformação {slot.id}
                     </span>
                   </div>
                 )}
               </div>
-              <p className="absolute bottom-3 left-3 rounded-sm bg-cream/90 px-3 py-1 text-[0.6rem] uppercase tracking-[0.2em] text-foreground/70">
+              <p className="absolute bottom-3 left-3 rounded-sm border border-gold/25 bg-ink/80 px-3 py-1 text-[0.6rem] uppercase tracking-[0.2em] text-cream/85">
                 {slot.category}
               </p>
             </motion.li>
